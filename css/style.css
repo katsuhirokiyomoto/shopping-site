@@ -42,18 +42,26 @@ header {
           position: relative;
           cursor: pointer; }
           header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle {
-            width: 120px;
-            display: none;
+            width: 380px;
+            height: 230px;
             position: absolute;
+            display: none;
             z-index: 2;
-            background-color: #ffffff;
-            left: -30px;
+            background-color: #ff6d77;
+            padding-bottom: 10px;
             /* li ここまで */ }
             header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle li {
-              padding: 10px;
-              border-top: 1px solid #eee;
+              width: 90%;
+              margin-left: auto;
+              margin-right: auto;
+              font-size: 1.5rem;
+              text-align: left;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              border-top: 1px solid #ffffff;
               /* a ここまで */ }
               header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle li a {
+                color: #ffffff;
                 text-decoration: none; }
     header #header_in .banner img {
       width: 100%; }
@@ -116,7 +124,7 @@ header {
       /* image_pc ここまで */
       /* content ここまで */ }
       .container main #new_items .image_sp, .container main #list_items .image_sp {
-        width: 45%;
+        width: 30%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
@@ -165,7 +173,7 @@ header {
       /* image_pc ここまで */
       /* content ここまで */ }
       .container main #popular_items .image_sp, .container main #recent_items .image_sp {
-        width: 45%;
+        width: 30%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 15px;
@@ -218,7 +226,7 @@ header {
       /* image_pc ここまで */
       /* content ここまで */ }
       .container main #shopping_guide .image_sp {
-        width: 45%;
+        width: 30%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 15px;

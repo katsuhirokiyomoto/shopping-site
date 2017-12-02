@@ -57,18 +57,26 @@ header{
       /* each_icon ここまで */
       .hamburger_menu{
         position: relative;
-        cursor: pointer;
+         cursor: pointer;
         .hamburger_menu_toggle{
-          width: 120px;
-          display: none;
+          width: 380px;
+          height: 230px;
           position: absolute;
+          display: none;
           z-index:2;
-          background-color: $basecolor2;
-          left:-30px;
+          background-color: #ff6d77;
+          padding-bottom: 10px;
           li{
-            padding: 10px; 
-            border-top: 1px solid #eee;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5rem;
+            text-align: left;
+            padding-top: 20px; 
+            padding-bottom: 20px;
+            border-top: 1px solid $basecolor2;
             a{
+              color: $basecolor2;
               text-decoration: none;
             }
             /* a ここまで */
@@ -159,7 +167,7 @@ header{
   main{
     #new_items{
       .image_sp{
-          width: 45%;
+          width: 30%;
           margin-left: auto;
           margin-right: auto;
           margin-top: 10px;
@@ -224,7 +232,7 @@ header{
     
      #popular_items{
        .image_sp{
-          width: 45%;
+          width: 30%;
           margin-left: auto;
           margin-right: auto;
           margin-top: 15px;
@@ -293,7 +301,7 @@ header{
       padding-top: 15px;
       background-color: $basecolor1;
       .image_sp{
-          width: 45%;
+          width: 30%;
           margin-left: auto;
           margin-right: auto;
           margin-bottom: 15px;
