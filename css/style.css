@@ -1,0 +1,898 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html {
+  font-size: 62.5%;
+  background-color: #f9f8f6;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+
+header {
+  /* header_in ここまで */ }
+  header #header_in {
+    /* logo_sp ここまで */
+    /* navi ここまで */
+    /* banner ここまで*/ }
+    header #header_in .logo_sp {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      text-align: center; }
+    header #header_in .logo_pc {
+      display: none; }
+    header #header_in .navi {
+      /* pc_navi ここまで */
+      /* icon ここまで */ }
+      header #header_in .navi .pc_navi ul li {
+        display: none; }
+      header #header_in .navi .icon {
+        text-align: center;
+        /* each_icon ここまで */
+        /* hamburger_menu ここまで */ }
+        header #header_in .navi .icon .each_icon {
+          display: inline; }
+          header #header_in .navi .icon .each_icon img {
+            margin: 10px 5px 10px 0px; }
+        header #header_in .navi .icon .hamburger_menu {
+          position: relative;
+          cursor: pointer; }
+          header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle {
+            width: 120px;
+            display: none;
+            position: absolute;
+            z-index: 2;
+            background-color: #ffffff;
+            left: -30px;
+            /* li ここまで */ }
+            header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle li {
+              padding: 10px;
+              border-top: 1px solid #eee;
+              /* a ここまで */ }
+              header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle li a {
+                text-decoration: none; }
+    header #header_in .banner img {
+      width: 100%; }
+
+/* header ここまで */
+@media (min-width: 500px) {
+  html {
+    width: 75%;
+    padding-left: auto;
+    padding-right: auto; }
+
+  header {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    /* header_in ここまで */ }
+    header #header_in {
+      width: 100%;
+      /* logo_sp */
+      /* logo_pc ここまで */
+      /* navi ここまで */ }
+      header #header_in .logo_sp {
+        display: none; }
+      header #header_in .logo_pc {
+        float: left;
+        width: 20%;
+        display: block;
+        padding-bottom: 0px; }
+      header #header_in .navi {
+        float: right;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        /* pc_navi ここまで */
+        /* icon ここまで */ }
+        header #header_in .navi .pc_navi {
+          width: 100%; }
+          header #header_in .navi .pc_navi ul li {
+            display: inline;
+            margin-right: 10px; }
+        header #header_in .navi .icon {
+          display: none; }
+    header header_in::after {
+      clear: both; }
+
+  /* header ここまで */
+  .container {
+    clear: both; }
+
+  /* container ここまで */ }
+/* @media ここまで  */
+.container {
+  /* main ここまで */
+  /* asideここまで */ }
+  .container main {
+    /* new_items ここまで */
+    /* popular_items ここまで */
+    /* shopping_guide ここまで */ }
+    .container main #new_items, .container main #list_items {
+      /*image_sp ここまで */
+      /* image_pc ここまで */
+      /* content ここまで */ }
+      .container main #new_items .image_sp, .container main #list_items .image_sp {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        /* img ここまで */ }
+        .container main #new_items .image_sp img, .container main #list_items .image_sp img {
+          width: 100%; }
+      .container main #new_items .image_pc, .container main #list_items .image_pc {
+        display: none;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        /* img ここまで */ }
+        .container main #new_items .image_pc img, .container main #list_items .image_pc img {
+          width: 100%; }
+      .container main #new_items .content, .container main #list_items .content {
+        flex-wrap: wrap;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        /* each_content ここまで */ }
+        .container main #new_items .content .each_content, .container main #list_items .content .each_content {
+          width: 49.7%;
+          background-color: #ffffff;
+          padding-top: 7px;
+          margin-bottom: 2px;
+          /* each_picture ここまで */ }
+          .container main #new_items .content .each_content .each_picture, .container main #list_items .content .each_content .each_picture {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 7px; }
+            .container main #new_items .content .each_content .each_picture img, .container main #list_items .content .each_content .each_picture img {
+              width: 100%; }
+          .container main #new_items .content .each_content p, .container main #list_items .content .each_content p {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto; }
+          .container main #new_items .content .each_content .item_value, .container main #list_items .content .each_content .item_value {
+            margin-top: 10px;
+            margin-bottom: 10px; }
+    .container main #popular_items, .container main #recent_items {
+      /*image_sp ここまで */
+      /* image_pc ここまで */
+      /* content ここまで */ }
+      .container main #popular_items .image_sp, .container main #recent_items .image_sp {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        /* img ここまで */ }
+        .container main #popular_items .image_sp img, .container main #recent_items .image_sp img {
+          width: 100%; }
+      .container main #popular_items .image_pc, .container main #recent_items .image_pc {
+        display: none;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        /* img ここまで */ }
+        .container main #popular_items .image_pc img, .container main #recent_items .image_pc img {
+          width: 100%; }
+      .container main #popular_items .content, .container main #recent_items .content {
+        flex-wrap: wrap;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        /* each_content ここまで */ }
+        .container main #popular_items .content .each_content, .container main #recent_items .content .each_content {
+          width: 49.7%;
+          padding-top: 7px;
+          margin-bottom: 2px;
+          background-color: #ffffff;
+          /* each_picture ここまで */
+          /* item_value ここまで */ }
+          .container main #popular_items .content .each_content .each_picture, .container main #recent_items .content .each_content .each_picture {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 7px;
+            /* img ここまで */ }
+            .container main #popular_items .content .each_content .each_picture img, .container main #recent_items .content .each_content .each_picture img {
+              width: 100%; }
+          .container main #popular_items .content .each_content p, .container main #recent_items .content .each_content p {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto; }
+          .container main #popular_items .content .each_content .item_value, .container main #recent_items .content .each_content .item_value {
+            margin-top: 10px;
+            margin-bottom: 10px; }
+    .container main #shopping_guide {
+      padding-top: 15px;
+      background-color: #f9f8f6;
+      /*image_sp ここまで */
+      /* image_pc ここまで */
+      /* content ここまで */ }
+      .container main #shopping_guide .image_sp {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        /* img ここまで */ }
+        .container main #shopping_guide .image_sp img {
+          width: 100%; }
+      .container main #shopping_guide .image_pc {
+        display: none;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        /* img ここまで */ }
+        .container main #shopping_guide .image_pc img {
+          width: 100%; }
+      .container main #shopping_guide .content {
+        /* otodoke ここまで */
+        /* kessai ここまで */ }
+        .container main #shopping_guide .content .otodoke {
+          background-color: #ffffff;
+          /* otodoke_content ここまで */ }
+          .container main #shopping_guide .content .otodoke .otodoke_content {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 17px;
+            padding-bottom: 10px;
+            /* h1 ここまで */
+            /* otodoke_banner ここまで */
+            /* olここまで */ }
+            .container main #shopping_guide .content .otodoke .otodoke_content h1 {
+              color: #887f69;
+              font-size: 2rem;
+              font-weight: bold;
+              padding-top: 15px;
+              margin-bottom: 0px; }
+            .container main #shopping_guide .content .otodoke .otodoke_content .otodoke_banner {
+              margin-top: 15px;
+              width: 60%; }
+            .container main #shopping_guide .content .otodoke .otodoke_content ol {
+              font-size: 1.2rem;
+              /* li ここまで */ }
+              .container main #shopping_guide .content .otodoke .otodoke_content ol li {
+                color: #887f69;
+                font-weight: bold;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                /*pここまで */ }
+                .container main #shopping_guide .content .otodoke .otodoke_content ol li p {
+                  color: #000000;
+                  font-weight: normal;
+                  padding-top: 10px; }
+        .container main #shopping_guide .content .kessai {
+          background-color: #ffffff;
+          /* kessai_content ここまで */ }
+          .container main #shopping_guide .content .kessai .kessai_content {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            /* h1 ここまで */
+            /* ul ここまで */ }
+            .container main #shopping_guide .content .kessai .kessai_content h1 {
+              color: #887f69;
+              font-weight: bold;
+              font-size: 2rem;
+              padding-top: 15px;
+              padding-bottom: 0px; }
+            .container main #shopping_guide .content .kessai .kessai_content ul {
+              /* li ここまで */ }
+              .container main #shopping_guide .content .kessai .kessai_content ul li {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #887f69;
+                /* img ここまで */
+                /* pここまで */ }
+                .container main #shopping_guide .content .kessai .kessai_content ul li img {
+                  margin-top: 10px;
+                  width: 100%; }
+                .container main #shopping_guide .content .kessai .kessai_content ul li p {
+                  font-weight: normal;
+                  color: #000000;
+                  line-height: 1.2;
+                  padding-top: 10px;
+                  padding-bottom: 5px; }
+  .container aside {
+    /* item_search ここまで */
+    /* each_box ここまで */
+    /* page_link ここまで */
+    /* categories ここまで */
+    /* about ここまで */
+    /* shop_info ここまで*/ }
+    .container aside .item_search {
+      position: relative;
+      background-color: #ffffff;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      /*search_box ここまで */ }
+      .container aside .item_search .search_box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        /* input ここまで */ }
+        .container aside .item_search .search_box img {
+          display: none; }
+        .container aside .item_search .search_box input {
+          width: 100%;
+          background-color: #f9f8f6;
+          background-image: url(../images/top/search_icon.png);
+          background-repeat: no-repeat;
+          background-position: 95% center;
+          border: none;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+    .container aside .each_box {
+      position: relative;
+      height: 50px;
+      background-color: #887f69;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .container aside .each_box img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 5%;
+        margin-top: auto;
+        margin-bottom: auto; }
+    .container aside .page_link .each_box {
+      background-image: url(../images/top/next_icon_gray.png);
+      background-repeat: no-repeat;
+      background-position: 95% center; }
+    .container aside .categories {
+      /* each_categories ここまで */ }
+      .container aside .categories .each_box {
+        background-image: url(../images/top/down_icon.png);
+        background-repeat: no-repeat;
+        background-position: 95% center; }
+      .container aside .categories .each_categories {
+        /* li ここまで */ }
+        .container aside .categories .each_categories li {
+          background-color: #ffffff;
+          margin-bottom: 3px;
+          /*p ここまで　*/ }
+          .container aside .categories .each_categories li p {
+            font-size: 1.5rem;
+            padding: 10px;
+            background-image: url(../images/top/next_icon_gray.png);
+            background-repeat: no-repeat;
+            background-position: 95% center; }
+    .container aside .about {
+      background-color: #ffffff;
+      padding-bottom: 5px;
+      /* about_content */ }
+      .container aside .about .about_content {
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+        /* content_picture */
+        /* content_sesntence */ }
+        .container aside .about .about_content .content_picture {
+          width: 50%;
+          float: left;
+          /* img ここまで */ }
+          .container aside .about .about_content .content_picture img {
+            width: 90%;
+            margin-left: 5px; }
+        .container aside .about .about_content .content_sentence {
+          padding-left: 0;
+          font-size: 1.3rem;
+          line-height: 150%;
+          /* img ここまで */ }
+          .container aside .about .about_content .content_sentence img {
+            margin-top: 8px; }
+    .container aside .shop_info {
+      background-color: #ffffff;
+      /* each_box */
+      /* shop_info_content ここまで */ }
+      .container aside .shop_info .each_box {
+        clear: both; }
+      .container aside .shop_info .shop_info_content {
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        /* content_picture */
+        /* content_sentence */ }
+        .container aside .shop_info .shop_info_content .content_picture {
+          width: 50%;
+          float: left;
+          /* img ここまで */ }
+          .container aside .shop_info .shop_info_content .content_picture img {
+            display: inline;
+            width: 90%;
+            margin-left: 5px; }
+        .container aside .shop_info .shop_info_content .content_sentence {
+          /* p ここまで */
+          /* img ここまで */ }
+          .container aside .shop_info .shop_info_content .content_sentence p {
+            font-size: 1.3rem;
+            line-height: 150%; }
+          .container aside .shop_info .shop_info_content .content_sentence img {
+            margin-top: 8px; }
+
+/* container ここまで */
+@media (min-width: 500px) {
+  .container {
+    /* main ここまで */
+    /* aside ここまで */
+    /* pagetop_mozi ここまで */ }
+    .container main {
+      width: 73%;
+      float: left;
+      /* new_items ここまで */
+      /* popular_items ここまで */
+      /* shopping_guideここまで */ }
+      .container main #new_items, .container main #list_items {
+        /*image_sp ここまで */
+        /* image_pc ここまで */
+        /* content ここまで */ }
+        .container main #new_items .image_sp, .container main #list_items .image_sp {
+          display: none;
+          /* img ここまで */ }
+        .container main #new_items .image_pc, .container main #list_items .image_pc {
+          width: 100%;
+          display: block;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          /* img ここまで */ }
+          .container main #new_items .image_pc img, .container main #list_items .image_pc img {
+            width: 100%; }
+        .container main #new_items .content .each_content, .container main #list_items .content .each_content {
+          width: 33%; }
+      .container main #popular_items, .container main #recent_items {
+        /*image_sp ここまで */
+        /* image_pc ここまで */
+        /* content ここまで */ }
+        .container main #popular_items .image_sp, .container main #recent_items .image_sp {
+          display: none;
+          /* img ここまで */ }
+        .container main #popular_items .image_pc, .container main #recent_items .image_pc {
+          width: 100%;
+          display: block;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          /* img ここまで */ }
+          .container main #popular_items .image_pc img, .container main #recent_items .image_pc img {
+            width: 100%; }
+        .container main #popular_items .content .each_content, .container main #recent_items .content .each_content {
+          width: 33%; }
+      .container main #shopping_guide {
+        /*image_sp ここまで */
+        /* image_pc ここまで */
+        /* content ここまで */ }
+        .container main #shopping_guide .image_sp {
+          display: none;
+          /* img ここまで */ }
+        .container main #shopping_guide .image_pc {
+          width: 100%;
+          display: block;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          /* img ここまで */ }
+          .container main #shopping_guide .image_pc img {
+            width: 100%; }
+        .container main #shopping_guide .content {
+          display: flex;
+          /* otodoke ここまで */
+          /* kessai ここまで　*/ }
+          .container main #shopping_guide .content .otodoke {
+            width: 49.5%; }
+          .container main #shopping_guide .content .kessai {
+            width: 49.5%;
+            margin-left: 5px; }
+    .container aside {
+      float: left;
+      width: 22%;
+      margin-left: 40px;
+      /* item_search ここまで */
+      /* about ここまで */
+      /* shop_info ここまで*/ }
+      .container aside .item_search {
+        /*search_box ここまで */ }
+        .container aside .item_search .search_box {
+          /* img ここまで */
+          /* input ここまで */ }
+          .container aside .item_search .search_box img {
+            display: block;
+            margin-bottom: 10px; }
+      .container aside .about {
+        /* about_content */ }
+        .container aside .about .about_content {
+          width: 90%;
+          /* content_picture */
+          /* content_sesntence */ }
+          .container aside .about .about_content .content_picture {
+            width: 100%;
+            float: none;
+            /* img ここまで */ }
+            .container aside .about .about_content .content_picture img {
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto; }
+          .container aside .about .about_content .content_sentence {
+            width: 100%;
+            /* img ここまで */ }
+            .container aside .about .about_content .content_sentence img {
+              width: 60%;
+              margin-left: 30px; }
+      .container aside .shop_info {
+        /* each_box */
+        /* shop_info_content ここまで */ }
+        .container aside .shop_info .shop_info_content {
+          width: 90%;
+          /* content_picture */
+          /* content_sentence */ }
+          .container aside .shop_info .shop_info_content .content_picture {
+            width: 100%;
+            /* img ここまで */ }
+            .container aside .shop_info .shop_info_content .content_picture img {
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto; }
+          .container aside .shop_info .shop_info_content .content_sentence {
+            width: 100%;
+            /* p ここまで */
+            /* img ここまで */ }
+            .container aside .shop_info .shop_info_content .content_sentence img {
+              width: 60%;
+              margin-left: 30px; }
+    .container .pagetop_mozi {
+      text-align: right; }
+
+  /* container ここまで */
+  footer {
+    clear: both; } }
+/* @media ここまで */
+footer {
+  /* pagetop_mozi */
+  /* ul ここまで */ }
+  footer .pagetop_mozi {
+    clear: both;
+    height: 60px;
+    position: relative;
+    border-bottom: solid thin #887f69; }
+    footer .pagetop_mozi img {
+      zoom: 1.2;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto; }
+  footer ul {
+    text-align: center;
+    width: 85%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    /*li ここまで */ }
+    footer ul li {
+      line-height: 150%;
+      display: inline; }
+  footer p {
+    color: #b0b0b0;
+    text-align: center;
+    margin-bottom: 40px; }
+
+/* footer ここまで */
+@media (min-width: 500px) {
+  footer .pagetop_mozi img {
+    right: 0px;
+    left: auto; }
+
+  /* footer ここまで */ }
+/* list ページ　ここから */
+.container {
+  /* main ここまで */ }
+  .container main {
+    /*product_pankuzu_list ここまで */
+    /* head_picture ここまで */
+    /* list_items ここまで */ }
+    .container main .list_pankuzu_list {
+      background-color: #e2ddd4;
+      font-size: 1.1rem;
+      color: #887f69;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .container main .head_picture img {
+      width: 100%; }
+    .container main #recent_items {
+      padding-top: 5px;
+      background-color: #f9f8f6; }
+      .container main #recent_items h1 {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 2rem; }
+
+/* container ここまで */
+/* listページ ここまで */
+/* products ページ　ここから */
+.container {
+  /* main ここまで */ }
+  .container main {
+    background-color: #f9f8f6;
+    /*product_pankuzu_list ここまで */
+    /* product_display ここまで */ }
+    .container main .product_pankuzu_list {
+      background-color: #e2ddd4;
+      font-size: 1.1rem;
+      color: #887f69;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .container main .product_display {
+      background-color: #ffffff;
+      width: 100%;
+      /* display_content ここまで */
+      /* color-size ここまで */
+      /* purchase_area ここまで */
+      /* product_description ここまで */ }
+      .container main .product_display .display_content {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        /* item_name ここまで*/
+        /* display_items ここまで */ }
+        .container main .product_display .display_content .item_name {
+          padding-top: 20px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid #e2ddd4;
+          margin-bottom: 10px;
+          /* h1 ここまで */
+          /* p ここまで */ }
+          .container main .product_display .display_content .item_name h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px; }
+          .container main .product_display .display_content .item_name p {
+            color: #887f69; }
+        .container main .product_display .display_content #display_items {
+          /* display_picture ここまで */
+          /* list_picture ここまで */ }
+          .container main .product_display .display_content #display_items .display_picture img {
+            width: 100%; }
+          .container main .product_display .display_content #display_items .list_picture {
+            flex-wrap: wrap;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-between;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            /* li ここまで */ }
+            .container main .product_display .display_content #display_items .list_picture li {
+              width: 18%;
+              /* img ここまで */ }
+              .container main .product_display .display_content #display_items .list_picture li img {
+                width: 100%;
+                background-color: #f9f8f6;
+                cursor: pointer; }
+      .container main .product_display .color-size {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        /* title_name ここまで */
+        /*table ここまで */ }
+        .container main .product_display .color-size .title_name {
+          padding-top: 20px;
+          padding-bottom: 20px; }
+        .container main .product_display .color-size table {
+          width: 100%;
+          border-collapse: collapse;
+          border: 1px solid #e2ddd4;
+          /* tr ここまで */ }
+          .container main .product_display .color-size table tr {
+            /* td ここまで */ }
+            .container main .product_display .color-size table tr td {
+              background-color: #f9f8f6;
+              border: 1px solid #b0b0b0;
+              text-align: center;
+              font-size: 1.3rem;
+              line-height: 4rem;
+              color: #887f69; }
+          .container main .product_display .color-size table tr:nth-child(2) td:nth-child(2) {
+            background-color: #ffffff; }
+          .container main .product_display .color-size table tr:nth-child(2) td:nth-child(3) {
+            background-color: #ffffff; }
+      .container main .product_display .purchase_area {
+        width: 95%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        /* price_quantity ここまで */
+        /* purchase_button ここまで */ }
+        .container main .product_display .purchase_area .price_quantity {
+          /* price ここまで */
+          /* quantity ここまで */ }
+          .container main .product_display .purchase_area .price_quantity .price {
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            /* section ここまで */ }
+            .container main .product_display .purchase_area .price_quantity .price section {
+              padding-top: 20px;
+              padding-bottom: 20px;
+              font-style: italic;
+              border-top: 1px solid #e2ddd4;
+              border-bottom: 1px solid #e2ddd4;
+              /* p1 ここまで */ }
+              .container main .product_display .purchase_area .price_quantity .price section p1 {
+                margin-left: 40px;
+                color: #ff0000;
+                font-size: 2.5rem;
+                /* p2 ここまで */ }
+                .container main .product_display .purchase_area .price_quantity .price section p1 p2 {
+                  font-size: 1.3rem;
+                  color: #000000; }
+          .container main .product_display .purchase_area .price_quantity .quantity {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2ddd4;
+            /* img ここまで */
+            /* input ここまで */ }
+            .container main .product_display .purchase_area .price_quantity .quantity input {
+              padding-top: 5px;
+              padding-bottom: 5px;
+              margin-left: 20px; }
+        .container main .product_display .purchase_area .purchase_button {
+          width: 100%;
+          text-align: center; }
+      .container main .product_display .product_description {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        /* h1 ここまで */
+        /* description_title ここまで */
+        /* description_text ここまで */
+        /*table ここまで */ }
+        .container main .product_display .product_description h1 {
+          font-size: 1.3rem;
+          color: #887f69;
+          font-weight: bold;
+          padding-bottom: 10px; }
+        .container main .product_display .product_description .description_title {
+          border-top: 1px solid #887f69;
+          font-size: 1.3rem;
+          color: #887f69;
+          font-weight: bold;
+          line-height: 1.3;
+          padding-top: 10px; }
+        .container main .product_display .product_description .description_text {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          /* p ここまで */ }
+          .container main .product_display .product_description .description_text p {
+            font-size: 1.2rem;
+            line-height: 1.3; }
+        .container main .product_display .product_description table {
+          width: 100%;
+          border-collapse: collapse;
+          border: 1px solid #e2ddd4;
+          /* tr ここまで */ }
+          .container main .product_display .product_description table tr {
+            /* td ここまで */
+            /* td:nth-child(1)ここまで */
+            /* td:nth-child(2)ここまで */ }
+            .container main .product_display .product_description table tr td {
+              background-color: #ffffff;
+              border: 1px solid #b0b0b0;
+              text-align: center;
+              font-size: 1.1rem;
+              line-height: 3rem;
+              color: #887f69; }
+            .container main .product_display .product_description table tr td:nth-child(1) {
+              background-color: #f9f8f6;
+              padding-left: 15px;
+              padding-right: 15px; }
+            .container main .product_display .product_description table tr td:nth-child(2) {
+              padding-left: 5px;
+              padding-right: 5px; }
+
+/* container ここまで */
+@media (min-width: 550px) {
+  .container {
+    /* main ここまで */ }
+    .container main {
+      /*product_pankuzu_list ここまで */
+      /* product_display ここまで */ }
+      .container main .product_display {
+        width: 100%;
+        /* display_content ここまで */
+        /* color-size ここまで */
+        /* purchase_area ここまで */ }
+        .container main .product_display .display_content {
+          width: 80%;
+          /* item_name ここまで*/
+          /* display_items ここまで */ }
+          .container main .product_display .display_content .item_name {
+            /* h1 ここまで */
+            /* p ここまで */ }
+            .container main .product_display .display_content .item_name h1 {
+              float: left; }
+            .container main .product_display .display_content .item_name p {
+              float: right;
+              vertical-align: bottom;
+              margin-right: 0px; }
+          .container main .product_display .display_content #display_items {
+            clear: both;
+            display: flex;
+            /* display_picture ここまで */
+            /* list_picture ここまで */ }
+            .container main .product_display .display_content #display_items .display_picture {
+              width: 70%; }
+              .container main .product_display .display_content #display_items .display_picture img {
+                width: 100%; }
+            .container main .product_display .display_content #display_items .list_picture {
+              width: 27%;
+              margin-left: 20px;
+              /* li ここまで */ }
+              .container main .product_display .display_content #display_items .list_picture li {
+                width: 48%;
+                padding-right: 0px;
+                margin-right: 0px;
+                margin-bottom: 10px;
+                /* img ここまで */ }
+                .container main .product_display .display_content #display_items .list_picture li img {
+                  width: 100%; }
+        .container main .product_display .color-size {
+          width: 100%;
+          /* title_name ここまで */
+          /*table ここまで */ }
+          .container main .product_display .color-size table {
+            /* tr ここまで */ }
+            .container main .product_display .color-size table tr {
+              /* td ここまで */ }
+        .container main .product_display .purchase_area {
+          width: 100%;
+          display: flex;
+          padding-bottom: 0px;
+          border-bottom: 1px solid #e2ddd4;
+          /* price_quantity ここまで */
+          /* purchase_button ここまで */ }
+          .container main .product_display .purchase_area .price_quantity {
+            width: 58%;
+            margin-bottom: 0px;
+            /* price ここまで */
+            /* quantity ここまで */ }
+            .container main .product_display .purchase_area .price_quantity .price {
+              /* section ここまで */ }
+              .container main .product_display .purchase_area .price_quantity .price section {
+                /* p1 ここまで */ }
+                .container main .product_display .purchase_area .price_quantity .price section p1 {
+                  /* p2 ここまで */ }
+            .container main .product_display .purchase_area .price_quantity .quantity {
+              margin-bottom: 0px;
+              border-bottom: none; }
+          .container main .product_display .purchase_area .purchase_button {
+            width: 37%;
+            margin-top: 0px;
+            margin-left: 50px; }
+            .container main .product_display .purchase_area .purchase_button img {
+              width: 100%; }
+        .container main .product_display .product_description {
+          clear: both;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto; }
+
+  /* container ここまで */ }
+/* @media ここまで */
+/* products ページ ここまで */
+
+/*# sourceMappingURL=style.css.map */
