@@ -13,6 +13,7 @@ html {
   margin-right: auto; }
 
 header {
+  width: 100%;
   /* header_in ここまで */ }
   header #header_in {
     /* logo_sp ここまで */
@@ -26,8 +27,10 @@ header {
     header #header_in .logo_pc {
       display: none; }
     header #header_in .navi {
+      position: relative;
       /* pc_navi ここまで */
-      /* icon ここまで */ }
+      /* icon ここまで */
+      /* hamburger_menu_toggle ここまで */ }
       header #header_in .navi .pc_navi ul li {
         display: none; }
       header #header_in .navi .icon {
@@ -38,31 +41,28 @@ header {
           display: inline; }
           header #header_in .navi .icon .each_icon img {
             margin: 10px 5px 10px 0px; }
-        header #header_in .navi .icon .hamburger_menu {
-          position: relative;
-          cursor: pointer; }
-          header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle {
-            width: 380px;
-            height: 230px;
-            position: absolute;
-            display: none;
-            z-index: 2;
-            background-color: #ff6d77;
-            padding-bottom: 10px;
-            /* li ここまで */ }
-            header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle li {
-              width: 90%;
-              margin-left: auto;
-              margin-right: auto;
-              font-size: 1.5rem;
-              text-align: left;
-              padding-top: 20px;
-              padding-bottom: 20px;
-              border-top: 1px solid #ffffff;
-              /* a ここまで */ }
-              header #header_in .navi .icon .hamburger_menu .hamburger_menu_toggle li a {
-                color: #ffffff;
-                text-decoration: none; }
+      header #header_in .navi .hamburger_menu_toggle {
+        position: absolute;
+        width: 100%;
+        height: 170px;
+        display: none;
+        z-index: 5;
+        background-color: #ff6d77;
+        padding-bottom: 10px;
+        /* li ここまで */ }
+        header #header_in .navi .hamburger_menu_toggle li {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 1.2rem;
+          text-align: left;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-top: 1px solid #ffffff;
+          /* a ここまで */ }
+          header #header_in .navi .hamburger_menu_toggle li a {
+            color: #ffffff;
+            text-decoration: none; }
     header #header_in .banner img {
       width: 100%; }
 
@@ -103,22 +103,36 @@ header {
             margin-right: 10px; }
         header #header_in .navi .icon {
           display: none; }
-    header header_in::after {
+    header #header_in::after {
       clear: both; }
 
-  /* header ここまで */
-  .container {
-    clear: both; }
-
-  /* container ここまで */ }
+  /* header ここまで */ }
 /* @media ここまで  */
 .container {
   /* main ここまで */
   /* asideここまで */ }
   .container main {
+    width: 100%;
     /* new_items ここまで */
     /* popular_items ここまで */
     /* shopping_guide ここまで */ }
+    .container main .owl-nav {
+      display: none; }
+    .container main .owl-dots {
+      position: relative;
+      display: inline-block !important;
+      top: 0; }
+    .container main .owl-dots .owl-dot {
+      display: inline-block !important; }
+    .container main .owl-dots .owl-dot span {
+      display: block;
+      border-radius: 0;
+      width: 25px !important;
+      height: 2px !important;
+      margin: 0 8px 0 0;
+      background-color: #aaaaaa; }
+    .container main .owl-dots .active span {
+      background-color: #9d1a2d !important; }
     .container main #new_items, .container main #list_items {
       /*image_sp ここまで */
       /* image_pc ここまで */
