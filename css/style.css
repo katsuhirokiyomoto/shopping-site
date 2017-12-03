@@ -385,7 +385,7 @@ header {
           margin-bottom: 3px;
           /*p ここまで　*/ }
           .container aside .categories .each_categories li p {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             padding: 10px;
             background-image: url(../images/top/next_icon_gray.png);
             background-repeat: no-repeat;
@@ -629,9 +629,19 @@ footer {
       font-size: 1.1rem;
       color: #887f69;
       padding-top: 10px;
-      padding-bottom: 10px; }
-    .container main .head_picture img {
-      width: 100%; }
+      padding-bottom: 10px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      /* listpankuzu_picture */
+      /* p ここまで */ }
+      .container main .list_pankuzu_list p {
+        padding-left: 10px; }
+    .container main .head_picture {
+      margin-bottom: 10px; }
+      .container main .head_picture img {
+        width: 100%; }
     .container main #recent_items {
       padding-top: 5px;
       background-color: #f9f8f6; }
@@ -654,7 +664,17 @@ footer {
       font-size: 1.1rem;
       color: #887f69;
       padding-top: 10px;
-      padding-bottom: 10px; }
+      padding-left: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      /* product_pankuzu_picture */
+      /* p ここまで */ }
+      .container main .product_pankuzu_list .product_pankuzu_picuture {
+        /* img ここまで */ }
+      .container main .product_pankuzu_list p {
+        padding-left: 10px; }
     .container main .product_display {
       background-color: #ffffff;
       width: 100%;

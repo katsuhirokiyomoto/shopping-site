@@ -510,8 +510,9 @@ header{
           background-color: $basecolor2;
           margin-bottom: 3px;
           p{
-            font-size: 1.5rem ;
+            font-size: 1.1rem ;
             padding: 10px;
+           
             
             background-image: url(../images/top/next_icon_gray.png);
             background-repeat: no-repeat;
@@ -884,14 +885,28 @@ footer{
      color: $subcolor;
      padding-top: 10px;
      padding-bottom: 10px;
-      p{
-     
-    }
+     padding-left: 10px;
+     margin-bottom: 10px;
+     display: flex;
+     align-items: center;
+       .list_pankuzu_picture{
+         
+         img{
+           
+         }
+       }
+       /* listpankuzu_picture */
+      
+        p{
+          padding-left: 10px;
+        }
+        /* p ここまで */
    }
    /*product_pankuzu_list ここまで */
     
     
     .head_picture{
+      margin-bottom: 10px;
       img{
         width: 100%;
       }
@@ -930,10 +945,26 @@ footer{
      font-size: 1.1rem;
      color: $subcolor;
      padding-top: 10px;
+     padding-left: 10px;
      padding-bottom: 10px;
-      p{
+     margin-bottom: 10px;
+     display: flex;
+     align-items: center;
      
+     
+   
+     .product_pankuzu_picuture{
+       
+       img{
+       }
+       /* img ここまで */
+     }
+    /* product_pankuzu_picture */ 
+      p{
+       padding-left: 10px;
     }
+    /* p ここまで */
+   
    }
    /*product_pankuzu_list ここまで */
   .product_display{
